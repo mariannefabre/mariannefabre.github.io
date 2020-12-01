@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Marianne Fabre Personal Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Monda"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./resources/css/style.css" />
+    <script
+      data-require="jquery@*"
+      data-semver="2.0.3"
+      src="//code.jquery.com/jquery-2.0.3.min.js"
+    ></script>
+    <script src="./js/myscript.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <nav id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <ul class="nobullets">
+            <li>
+              <a href="#about" class="-spacing -uppercase -small">About me</a>
+            </li>
+            <li>
+              <a href="#portfolio" class="-spacing -uppercase -small"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a href="#skills" class="-spacing -uppercase -small">Skills</a>
+            </li>
+          </ul>
+        </nav>
+        <span class="openbtn" onclick="openNav()">&#9776;</span>
+
+        <div class="content-wrapper">
+          <h1>Marianne Fabre</h1>
+          <h2>Front-End Engineer</h2>
+        </div>
+        <p class="bottom-links -accent -small">
+          <a
+            class="-accent -uppercase -small"
+            href="https://www.linkedin.com/in/mariannefabre/"
+            target="_blank"
+            >LinkedIn</a
+          >
+          •
+          <a
+            class="-accent -uppercase -small"
+            href="https://github.com/mariannefabre"
+            target="_blank"
+            >Github</a
+          >
+        </p>
+      </header>
+
+      <main>
+        <section id="about">
+          <div class="introduction">
+            <h2>About me</h2>
+            <p>
+              Born and raised in Paris, evolving between french and south korean
+              cultures, I quickly developped curiosity to other cultures. After
+              getting my Bachelor's in engineering, I went to Montreal for my
+              first year of Master's, where I specialized in software
+              engineering. Being back in Paris, I worked 6 months as an intern
+              at VMware, before graduating in 2018. At that point, despite being
+              drawn by new technologies and software development I decided to
+              keep as many doors open as possible and moved to Hamburg to work
+              as an engineer consultant for Airbus. Living abroad and working in
+              an international context is enriching and working as a consultant
+              is a good way to try out different things. After two years I
+              finally took/made the step to focus on what I always wanted to do:
+              create products: I quited my job and took a self-learning course
+              to become a Front-End Engineer. Today I am still learning and look
+              forward to my journey as a Front-End Engineer.
+            </p>
+            <p>
+              <a
+                target="_top"
+                class="button"
+                onclick="window.location.href='mailto:mariannefbr@gmail.com';"
+                >Lets talk !</a
+              >
+              <a
+                class="button"
+                href="./resources/Marianne_FABRE_resume.pdf"
+                target="_blank"
+                >Download CV</a
+              >
+            </p>
+            <div class="box-container">
+              <div class="portrait">
+                <img src="./resources/Portrait-Marianne3.jpg" />
+              </div>
+
+              <div class="contact">
+                <ul class="contact-info nobullets">
+                  <li>
+                    <p class="-small -accent -spacing -uppercase">name</p>
+                    <p>Marianne Fabre</p>
+                  </li>
+                  <li>
+                    <p class="-small -accent -spacing -uppercase">role</p>
+                    <p>Front-end engineer</p>
+                  </li>
+                  <li>
+                    <p class="-small -accent -spacing -uppercase">email</p>
+                    <p>mariannefbr@gmail.com</p>
+                  </li>
+                  <li>
+                    <p class="-small -accent -spacing -uppercase">phone</p>
+                    <p>(+33) 6 51 01 51 85</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="portfolio">
+          <h2>Latest Projects</h2>
+
+          <div class="portfolio-item">
+            <video
+              src="./resources/demo-urban-yoga.mov"
+              autoplay
+              muted
+              loop
+              width="100%"
+              height="auto"
+            >
+              Sorry, your browser doesn't support embedded videos.
+            </video>
+            <p>Urban Yoga Website</p>
+            <p>HMTL, CSS</p>
+          </div>
+        </section>
+
+        <section class="skills-container" id="skills">
+          <h2>Skills</h2>
+
+          <div class="skill-holder">
+            <div class="label one">Javascript</div>
+            <div class="progress-bar">
+              <div class="progress fill-1">
+                <div class="glow"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-holder">
+            <div class="label two">HTML, CSS</div>
+            <div class="progress-bar">
+              <div class="progress fill-2">
+                <div class="glow"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-holder">
+            <div class="label three">Java</div>
+            <div class="progress-bar">
+              <div class="progress fill-3">
+                <div class="glow"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <p><span class="-accent">Contact</span></p>
+        <p>mariannefbr@gmail.com</p>
+        <p class="-small copyright">© 2020</p>
+      </footer>
+    </div>
+  </body>
+</html>
