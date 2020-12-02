@@ -1,19 +1,10 @@
-# mariannefabre.github.io
-
 # Marianne Fabre Personal Portfolio
 
+## General info
+This project aims to present myself as a Front-End developer. 
+It is a portfolio, in which I present my background, my skills and my last projects.
 
-Titles and internal titles
-Introduction - the project's aim
-Technologies
-Launch
-
-Consider also using additional elements such as: 
-
-Table of contents
-Illustrations
-Scope of functionalities 
-Examples of use
-Project status 
-Sources
-Other information
+## Technologies
+Project created with : 
+* HTML, CSS, Javascript
+* jQuery
