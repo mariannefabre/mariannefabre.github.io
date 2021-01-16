@@ -7,7 +7,7 @@ function closeNav() {
 }
 
 function toggleFullscreen() {
-  let frame = document.getElementById("fullscreen");
+  let frame = document.getElementById("memory-game");
   if (!document.fullscreenElement) {
     frame.requestFullscreen().catch((err) => {
       console.log(err);
@@ -17,20 +17,5 @@ function toggleFullscreen() {
   }
 }
 
-let toggle = document.getElementById("toggleFullscreen");
-toggle.addEventListener("click", toggleFullscreen, true);
-
-/*
-
-HTML : 
-
-<input type="button" onclick="addMailIframe();" value="Contact us" />
-<div id="myIframe"></div>
-
-function addMailIframe() {
-  $('<iframe src="mailto:mariannefbr@gmail.com">')
-    .appendTo("#myIframe")
-    .css("display", "none");
-}
-
-*/
+let toggleButton = document.getElementById("toggleFullscreen");
+toggleButton.addEventListener("click", toggleFullscreen, true);

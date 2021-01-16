@@ -2,17 +2,12 @@
 <html lang="en">
   <head>
     <title>Marianne Fabre Personal Portfolio</title>
+
     <link
       href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Monda"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./resources/css/style.css" />
-    <script
-      data-require="jquery@*"
-      data-semver="2.0.3"
-      src="//code.jquery.com/jquery-2.0.3.min.js"
-    ></script>
-    <script src="./js/myscript.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
@@ -68,7 +63,7 @@
         <section id="about">
           <div>
             <h2>About me</h2>
-            <div class="box-container">
+            <div class="subcontainer presentation">
               <div class="portrait">
                 <img src="./resources/Portrait-Marianne2.jpg" />
               </div>
@@ -109,58 +104,59 @@
 
         <section id="portfolio">
           <h2>Portfolio</h2>
-
-          <div class="portfolio-item">
-            <h3>Urban Yoga Website</h3>
-            <video
-              src="./resources/demo-urban-yoga.mov"
-              autoplay
-              muted
-              loop
-              width="100%"
-              height="auto"
-            >
-              Sorry, your browser doesn't support embedded videos.
-            </video>
-            <p>
-              <a
-                class="-accent -uppercase -small"
-                href="https://github.com/mariannefabre"
-                target="_blank"
-                >View on Github -&gt</a
+          <div class="subcontainer">
+            <div class="portfolio-item">
+              <h3>Urban Yoga Website</h3>
+              <video
+                src="./resources/demo-urban-yoga.mov"
+                autoplay
+                muted
+                loop
+                width="100%"
+                height="auto"
               >
-            </p>
+                Sorry, your browser doesn't support embedded videos.
+              </video>
+              <p>
+                <a
+                  class="-accent -uppercase -small"
+                  href="https://github.com/mariannefabre"
+                  target="_blank"
+                  >View on Github -&gt</a
+                >
+              </p>
+            </div>
+            <div class="portfolio-item">
+              <h3>Memory Card Game</h3>
+              <div class="iframe"> <iframe
+                id="memory-game"
+                src="https://mariannefabre.github.io/Memory-Card-Game"
+                title="Memory card game"
+                allow="fullscreen"
+              ></iframe></div>
+             
+  
+              <p id="toggleFullscreen">
+                <a class="-accent -uppercase -small" target="_blank"
+                  >Go full screen -&gt</a
+                >
+              </p>
+              <p>
+                <a
+                  class="-accent -uppercase -small"
+                  href="https://github.com/mariannefabre/Memory-Card-Game"
+                  target="_blank"
+                  >View on Github -&gt</a
+                >
+              </p>
           </div>
-          <div class="portfolio-item">
-            <h3>Memory Card Game</h3>
-            <iframe
-              id="fullscreen"
-              src="https://mariannefabre.github.io/Memory-Card-Game"
-              title="Memory card game"
-              width="100%"
-              height="700"
-              allow="fullscreen"
-            ></iframe>
 
-            <p id="toggleFullscreen">
-              <a class="-accent -uppercase -small" target="_blank"
-                >Go full screen -&gt</a
-              >
-            </p>
-            <p>
-              <a
-                class="-accent -uppercase -small"
-                href="https://github.com/mariannefabre/Memory-Card-Game"
-                target="_blank"
-                >View on Github -&gt</a
-              >
-            </p>
           </div>
         </section>
 
         <section id="skills">
           <h2>Skills</h2>
-          <div class="skills-container">
+          <div class="subcontainer skills-container">
             <p>Programming</p>
             <span title="HTML5"
               ><img src="./resources/html5.svg" alt="html5"
@@ -183,39 +179,13 @@
               ><img src="./resources/proto-io.svg" alt="proto.io"
             /></span>
           </div>
-          <!--           <div class="skill-holder">
-            <div class="label one">Javascript</div>
-            <div class="progress-bar">
-              <div class="progress fill-1">
-                <div class="glow"></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="skill-holder">
-            <div class="label two">HTML, CSS</div>
-            <div class="progress-bar">
-              <div class="progress fill-2">
-                <div class="glow"></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="skill-holder">
-            <div class="label three">Java</div>
-            <div class="progress-bar">
-              <div class="progress fill-3">
-                <div class="glow"></div>
-              </div>
-            </div>
-          </div> -->
         </section>
 
         <section>
           <h2>Contact</h2>
 
-          <div id="contact">
-            <ul class="contact-info nobullets">
+          <div class="subcontainer" id="contact">
+            <ul class="nobullets">
               <li>
                 <p class="-small -accent -spacing -uppercase">name</p>
                 <p>Marianne Fabre</p>
@@ -244,4 +214,6 @@
       </footer>
     </div>
   </body>
+
+  <script src="./js/myscript.js"></script>
 </html>

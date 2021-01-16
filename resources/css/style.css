@@ -88,6 +88,10 @@ img {
   width: 90%;
   margin: auto;
 }
+.subcontainer {
+  width: 80%;
+  margin: 30px auto;
+}
 
 /* UTILITIES */
 
@@ -143,11 +147,7 @@ img {
     padding-top: 60px;
   }
 }
-@media screen and (min-height: 1300px) {
-  .sidenav {
-    overflow-x: auto;
-  }
-}
+
 .sidenav a {
   padding: 8px 8px 8px 32px;
   display: block;
@@ -242,28 +242,16 @@ header h1 span {
   color: var(--color-secondary);
 }
 
-@media only screen and (min-width: 500px) {
-}
-@media only screen and (min-width: 1300px) {
-  /*   .content-wrapper {
-    left: 20vw;
-  } */
-}
-
 /* About Section */
 
-.box-container {
+.presentation {
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding: 20px 0;
-  width: 80%;
-  margin: 0 auto;
 }
-.box-container p {
+.presentation p {
   text-align: justify;
-  text-justify: inter-word;
 }
 
 .portrait {
@@ -279,26 +267,20 @@ header h1 span {
 /* Portfolio Section */
 
 .portfolio-item {
-  width: 80%;
   margin: 40px auto;
   height: auto;
   display: block;
 }
-@media only screen and (min-width: 1300px) {
-  .portfolio-item {
-    width: 80%;
-    margin: 40px auto;
-    height: auto;
-    display: block;
-  }
-}
 
+.iframe {
+  height: 80vh;
+}
+#memory-game {
+  width: 100%;
+  height: 100%;
+}
 /* Skills Section */
 
-.skills-container {
-  width: 80%;
-  margin: 0 auto;
-}
 .skills-container img {
   width: 80px;
   height: 80px;
@@ -306,18 +288,14 @@ header h1 span {
 }
 
 /* Contact Section */
-
-#contact {
-  background-color: var(--color-primary);
-  padding: 1.5rem 3rem;
-  color: var(--color-light);
-  max-width: 300px;
-  margin: 0 auto;
+#contact ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-.contact-info li {
-  padding-bottom: 0.3rem;
+#contact li {
+  margin: 0 10px;
 }
-
 /* Footer Section */
 
 footer {
