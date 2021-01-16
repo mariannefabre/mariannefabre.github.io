@@ -36,6 +36,9 @@
             <li>
               <a href="#skills" class="-spacing -uppercase -small">Skills</a>
             </li>
+            <li>
+              <a href="#contact" class="-spacing -uppercase -small">Contact</a>
+            </li>
           </ul>
         </nav>
         <span class="openbtn" onclick="openNav()">&#9776;</span>
@@ -63,72 +66,52 @@
 
       <main>
         <section id="about">
-          <div class="introduction">
+          <div>
             <h2>About me</h2>
-            <p>
-              Born and raised in Paris, evolving between french and south korean
-              cultures, I quickly developped curiosity to other cultures. After
-              getting my Bachelor's in engineering, I went to Montreal for my
-              first year of Master's, where I specialized in software
-              engineering. Being back in Paris, I worked 6 months as an intern
-              at VMware, before graduating in 2018. At that point, despite being
-              drawn by new technologies and software development I decided to
-              keep as many doors open as possible and moved to Hamburg to work
-              as an engineer consultant for Airbus. Living abroad and working in
-              an international context is enriching and working as a consultant
-              is a good way to try out different things. After two years I
-              finally took/made the step to focus on what I always wanted to do:
-              create products: I quited my job and took a self-learning course
-              to become a Front-End Engineer. Today I am still learning and look
-              forward to my journey as a Front-End Engineer.
-            </p>
-            <p>
-              <a
-                target="_top"
-                class="button"
-                onclick="window.location.href='mailto:mariannefbr@gmail.com';"
-                >Lets talk !</a
-              >
-              <a
-                class="button"
-                href="./resources/Marianne_FABRE_resume.pdf"
-                target="_blank"
-                >Download CV</a
-              >
-            </p>
             <div class="box-container">
               <div class="portrait">
-                <img src="./resources/Portrait-Marianne3.jpg" />
+                <img src="./resources/Portrait-Marianne2.jpg" />
               </div>
-
-              <div class="contact">
-                <ul class="contact-info nobullets">
-                  <li>
-                    <p class="-small -accent -spacing -uppercase">name</p>
-                    <p>Marianne Fabre</p>
-                  </li>
-                  <li>
-                    <p class="-small -accent -spacing -uppercase">role</p>
-                    <p>Front-end engineer</p>
-                  </li>
-                  <li>
-                    <p class="-small -accent -spacing -uppercase">email</p>
-                    <p>mariannefbr@gmail.com</p>
-                  </li>
-                  <li>
-                    <p class="-small -accent -spacing -uppercase">phone</p>
-                    <p>(+33) 6 51 01 51 85</p>
-                  </li>
-                </ul>
-              </div>
+              <p>
+                "I was born and raised in Paris, influenced by both my french
+                and south korean background. After obtaining my Bachelor's
+                degree in engineering, I spent part of my Master's in Montréal,
+                where I specialized in software engineering. Before graduating
+                in 2018, I completed a six month internship at VMware in Paris.
+                Despite being drawn to new technologies and software
+                development, I accepted an opportunity to work in Hamburg as an
+                engineering consultant for Airbus. Living abroad and working in
+                an international context is enriching, and working as a
+                consultant offers a diverse and varied range of work. After two
+                years, I decided to focus on realizing my ambition to design and
+                develop IT products. I therefore left my job to pursue a
+                front-end engineering course. Today I continue to enjoy learning
+                about software development and working towards a career as a
+                Front-End Engineer."
+              </p>
+              <p>
+                <a
+                  target="_top"
+                  class="button"
+                  onclick="window.location.href='mailto:mariannefbr@gmail.com';"
+                  >Lets talk !</a
+                >
+                <a
+                  class="button"
+                  href="./resources/Marianne_FABRE_resume.pdf"
+                  target="_blank"
+                  >Download CV</a
+                >
+              </p>
             </div>
           </div>
         </section>
 
         <section id="portfolio">
-          <h2>Latest Projects</h2>
+          <h2>Portfolio</h2>
 
           <div class="portfolio-item">
+            <h3>Urban Yoga Website</h3>
             <video
               src="./resources/demo-urban-yoga.mov"
               autoplay
@@ -139,15 +122,68 @@
             >
               Sorry, your browser doesn't support embedded videos.
             </video>
-            <p>Urban Yoga Website</p>
-            <p>HMTL, CSS</p>
+            <p>
+              <a
+                class="-accent -uppercase -small"
+                href="https://github.com/mariannefabre"
+                target="_blank"
+                >View on Github -&gt</a
+              >
+            </p>
+          </div>
+          <div class="portfolio-item">
+            <h3>Memory Card Game</h3>
+            <iframe
+              id="fullscreen"
+              src="https://mariannefabre.github.io/Memory-Card-Game"
+              title="Memory card game"
+              width="100%"
+              height="700"
+              allow="fullscreen"
+            ></iframe>
+
+            <p id="toggleFullscreen">
+              <a class="-accent -uppercase -small" target="_blank"
+                >Go full screen -&gt</a
+              >
+            </p>
+            <p>
+              <a
+                class="-accent -uppercase -small"
+                href="https://github.com/mariannefabre/Memory-Card-Game"
+                target="_blank"
+                >View on Github -&gt</a
+              >
+            </p>
           </div>
         </section>
 
-        <section class="skills-container" id="skills">
+        <section id="skills">
           <h2>Skills</h2>
+          <div class="skills-container">
+            <p>Programming</p>
+            <span title="HTML5"
+              ><img src="./resources/html5.svg" alt="html5"
+            /></span>
+            <span title="CSS3"
+              ><img src="./resources/css3.svg" alt="css3"
+            /></span>
+            <span title="Javascript5"
+              ><img src="./resources/javascript5.svg" alt="javascript5"
+            /></span>
+            <span title="REACT"
+              ><img src="./resources/react.svg" alt="react"
+            /></span>
 
-          <div class="skill-holder">
+            <p>UI Design</p>
+            <span title="Figma"
+              ><img src="./resources/figma.svg" alt="figma"
+            /></span>
+            <span title="Proto.io"
+              ><img src="./resources/proto-io.svg" alt="proto.io"
+            /></span>
+          </div>
+          <!--           <div class="skill-holder">
             <div class="label one">Javascript</div>
             <div class="progress-bar">
               <div class="progress fill-1">
@@ -172,13 +208,38 @@
                 <div class="glow"></div>
               </div>
             </div>
+          </div> -->
+        </section>
+
+        <section>
+          <h2>Contact</h2>
+
+          <div id="contact">
+            <ul class="contact-info nobullets">
+              <li>
+                <p class="-small -accent -spacing -uppercase">name</p>
+                <p>Marianne Fabre</p>
+              </li>
+              <li>
+                <p class="-small -accent -spacing -uppercase">role</p>
+                <p>Front-end engineer</p>
+              </li>
+              <li>
+                <p class="-small -accent -spacing -uppercase">email</p>
+                <p>mariannefbr@gmail.com</p>
+              </li>
+              <li>
+                <p class="-small -accent -spacing -uppercase">phone</p>
+                <p>(+33) 6 51 01 51 85</p>
+              </li>
+            </ul>
           </div>
+
+          <form class="form"></form>
         </section>
       </main>
 
       <footer>
-        <p><span class="-accent">Contact</span></p>
-        <p>mariannefbr@gmail.com</p>
         <p class="-small copyright">© 2020</p>
       </footer>
     </div>
