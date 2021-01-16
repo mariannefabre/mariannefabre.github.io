@@ -317,7 +317,7 @@ header h1 span {
   padding: 1.5rem 3rem;
   color: var(--color-light);
   min-width: 250px;
-  max-width: 400px;
+  max-width: 300px;
   margin: 0 auto;
 }
 .contact-info li {
