@@ -3,11 +3,6 @@
   --color-primary-light: #090d12;
   --color-secondary: #c5945c;
   --color-light: #d8d7db;
-  --bar-empty: #1e283a;
-  --bar-color: #c5945c;
-  --glow-width: 60px;
-  --glow-radius: 10px;
-  --glow-color: #2a366e;
 }
 
 /* General styles */
@@ -60,7 +55,7 @@ section {
   }
 }
 h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-family: "Julius Sans One", Sans-Serif;
   color: white;
   font-weight: bold;
@@ -221,7 +216,7 @@ img {
   position: relative;
   top: 30vh;
   z-index: 1;
-  left: 12vh;
+  left: 10vw;
   width: fit-content;
 }
 
@@ -250,9 +245,9 @@ header h1 span {
 @media only screen and (min-width: 500px) {
 }
 @media only screen and (min-width: 1300px) {
-  .content-wrapper {
-    left: 20vh;
-  }
+  /*   .content-wrapper {
+    left: 20vw;
+  } */
 }
 
 /* About Section */
@@ -316,8 +311,7 @@ header h1 span {
   background-color: var(--color-primary);
   padding: 1.5rem 3rem;
   color: var(--color-light);
-  min-width: 250px;
-  max-width: 400px;
+  max-width: 300px;
   margin: 0 auto;
 }
 .contact-info li {
