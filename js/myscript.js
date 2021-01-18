@@ -19,3 +19,6 @@ function toggleFullscreen() {
 
 let toggleButton = document.getElementById("toggleFullscreen");
 toggleButton.addEventListener("click", toggleFullscreen, true);
+
+let nav = document.getElementById("mySidenav");
+nav.addEventListener("click", closeNav, true);

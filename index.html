@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <title>Marianne Fabre Personal Portfolio</title>
-
+    <meta
+      name="Description"
+      content="Marianne Fabre's Portfolio, front end developer based in Hamburg and Paris."
+    />
     <link
       href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Monda"
       rel="stylesheet"
@@ -16,23 +19,23 @@
     <div class="container">
       <header>
         <nav id="mySidenav" class="sidenav">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-            >&times;</a
-          >
+          <a href="javascript:void(0)" class="closebtn">&times;</a>
           <ul class="nobullets">
             <li>
-              <a href="#about" class="-spacing -uppercase -small">About me</a>
+              <a href="#about" class="-spacing -uppercase">About me</a>
             </li>
             <li>
-              <a href="#portfolio" class="-spacing -uppercase -small"
-                >Portfolio</a
+              <a href="#portfolio" class="-spacing -uppercase">Portfolio</a>
+            </li>
+            <li>
+              <a href="#skills" class="-spacing -uppercase">Skills</a>
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="-spacing -uppercase"
+                >Contact</a
               >
-            </li>
-            <li>
-              <a href="#skills" class="-spacing -uppercase -small">Skills</a>
-            </li>
-            <li>
-              <a href="#contact" class="-spacing -uppercase -small">Contact</a>
             </li>
           </ul>
         </nav>
@@ -47,14 +50,15 @@
             class="-accent -uppercase -small"
             href="https://www.linkedin.com/in/mariannefabre/"
             target="_blank"
-            >LinkedIn</a
-          >
-          •
+            >LinkedIn
+          </a>
+          &nbsp;•&nbsp;
           <a
             class="-accent -uppercase -small"
             href="https://github.com/mariannefabre"
             target="_blank"
-            >Github</a
+          >
+            Github</a
           >
         </p>
       </header>
@@ -65,7 +69,7 @@
             <h2>About me</h2>
             <div class="subcontainer presentation">
               <div class="portrait">
-                <img src="./resources/Portrait-Marianne2.jpg" />
+                <img src="./resources/Portrait-Marianne.jpg" alt="Marianne" />
               </div>
               <p>
                 "I was born and raised in Paris, influenced by both my french
@@ -86,16 +90,10 @@
               </p>
               <p>
                 <a
-                  target="_top"
-                  class="button"
-                  onclick="window.location.href='mailto:mariannefbr@gmail.com';"
-                  >Lets talk !</a
-                >
-                <a
-                  class="button"
+                  class="-accent -uppercase -small"
                   href="./resources/Marianne_FABRE_resume.pdf"
                   target="_blank"
-                  >Download CV</a
+                  >Download CV →</a
                 >
               </p>
             </div>
@@ -122,42 +120,40 @@
                   class="-accent -uppercase -small"
                   href="https://github.com/mariannefabre"
                   target="_blank"
-                  >View on Github -&gt</a
+                  >View on Github →</a
                 >
               </p>
             </div>
             <div class="portfolio-item">
               <h3>Memory Card Game</h3>
-              <div class="iframe"> <iframe
-                id="memory-game"
-                src="https://mariannefabre.github.io/Memory-Card-Game"
-                title="Memory card game"
-                allow="fullscreen"
-              ></iframe></div>
-             
-  
+              <div class="iframe-container">
+                <iframe
+                  id="memory-game"
+                  src="https://mariannefabre.github.io/Memory-Card-Game"
+                  title="Memory card game"
+                  allow="fullscreen"
+                ></iframe>
+              </div>
+
               <p id="toggleFullscreen">
-                <a class="-accent -uppercase -small" target="_blank"
-                  >Go full screen -&gt</a
-                >
+                <a class="-accent -uppercase -small">Go full screen →</a>
               </p>
               <p>
                 <a
                   class="-accent -uppercase -small"
                   href="https://github.com/mariannefabre/Memory-Card-Game"
                   target="_blank"
-                  >View on Github -&gt</a
+                  >View on Github →</a
                 >
               </p>
-          </div>
-
+            </div>
           </div>
         </section>
 
         <section id="skills">
           <h2>Skills</h2>
           <div class="subcontainer skills-container">
-            <p>Programming</p>
+            <h3>Programming</h3>
             <span title="HTML5"
               ><img src="./resources/html5.svg" alt="html5"
             /></span>
@@ -171,7 +167,7 @@
               ><img src="./resources/react.svg" alt="react"
             /></span>
 
-            <p>UI Design</p>
+            <h3>UI Design</h3>
             <span title="Figma"
               ><img src="./resources/figma.svg" alt="figma"
             /></span>
@@ -181,10 +177,10 @@
           </div>
         </section>
 
-        <section>
+        <section id="contact">
           <h2>Contact</h2>
 
-          <div class="subcontainer" id="contact">
+          <div class="subcontainer contact-container">
             <ul class="nobullets">
               <li>
                 <p class="-small -accent -spacing -uppercase">name</p>
@@ -194,13 +190,19 @@
                 <p class="-small -accent -spacing -uppercase">role</p>
                 <p>Front-end engineer</p>
               </li>
+            </ul>
+            <ul class="nobullets">
               <li>
                 <p class="-small -accent -spacing -uppercase">email</p>
-                <p>mariannefbr@gmail.com</p>
+                <p>
+                  <a target="_top" href="mailto:mariannefbr@gmail.com"
+                    >mariannefbr@gmail.com →
+                  </a>
+                </p>
               </li>
               <li>
                 <p class="-small -accent -spacing -uppercase">phone</p>
-                <p>(+33) 6 51 01 51 85</p>
+                <p><a href="tel:+33651015185">(+33) 6 51 01 51 85 →</a></p>
               </li>
             </ul>
           </div>
