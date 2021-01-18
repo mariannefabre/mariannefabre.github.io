@@ -78,7 +78,7 @@ h2 {
 }
 
 h3 {
-  margin: 4rem 0 2rem 0;
+  margin: 3rem 0;
 }
 
 a {
@@ -210,11 +210,11 @@ a:focus {
 }
 
 header {
-  height: 95vh;
+  height: 100vh;
 }
 
 header h2 {
-  margin: 10px 15px;
+  margin: 35px 12px;
 }
 
 header h2::before {
