@@ -74,7 +74,6 @@ h1 {
 h2 {
   text-transform: uppercase;
   color: var(--color-secondary);
-  /*   margin: 8rem 0 5rem 0; */
 }
 
 h3 {
@@ -130,7 +129,7 @@ a:focus {
 
 #nav-icon {
   width: 2rem;
-  height: 1.125rem;
+  height: 2rem;
   position: fixed;
   top: 20px;
   left: 18px;
@@ -139,9 +138,11 @@ a:focus {
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   cursor: pointer;
+  z-index: 4;
 }
 
 #nav-icon span {
+  z-index: 4;
   display: block;
   position: absolute;
   height: 2px;
