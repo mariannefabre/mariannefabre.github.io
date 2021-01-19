@@ -1,10 +1,24 @@
+let sideNav = document.getElementById("mySidenav");
+
+function isNavOpen() {
+  return sideNav.style.width === "100%" ? true : false;
+}
 function openNav() {
-  document.getElementById("mySidenav").style.width = "100%";
+  sideNav.style.width = "100%";
 }
 
 function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
+  sideNav.style.width = "0";
 }
+
+sideNav.addEventListener(
+  "click",
+  () => {
+    document.getElementById("nav-icon").classList.toggle("open");
+    isNavOpen() ? closeNav() : openNav();
+  },
+  true
+);
 
 function toggleFullscreen() {
   let frame = document.getElementById("memory-game");
@@ -19,6 +33,3 @@ function toggleFullscreen() {
 
 let toggleButton = document.getElementById("toggleFullscreen");
 toggleButton.addEventListener("click", toggleFullscreen, true);
-
-let nav = document.getElementById("mySidenav");
-nav.addEventListener("click", closeNav, true);
