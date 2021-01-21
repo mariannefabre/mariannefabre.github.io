@@ -260,14 +260,20 @@ header {
 
 .hero {
   position: relative;
-  top: 30vh;
+  top: 20vh;
   left: 5vw;
   width: fit-content;
 }
 
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 460px) {
   .hero {
     left: 10vw;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .hero {
+    top: 30vh;
   }
 }
 
@@ -394,7 +400,7 @@ footer {
     width: 0;
   }
   to {
-    width: 8.5em;
+    width: 9em;
   }
 }
 @keyframes blinkTextCursor {
