@@ -20,7 +20,7 @@ html {
 body {
   background-color: var(--color-primary);
   color: var(--color-light-grey);
-  font-family: "Gill Sans", "Gill Sans MT", Sans-Serif;
+  font-family: "Inter", Sans-Serif;
   padding-top: 60px;
 }
 main,
@@ -301,7 +301,7 @@ header h2 {
 }
 .presentation p {
   text-align: justify;
-  font-family: Helvetica;
+  font-family: "Inter", Helvetica, sans-serif;
 }
 
 .portrait {
