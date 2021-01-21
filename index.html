@@ -6,11 +6,13 @@
       name="Description"
       content="Marianne Fabre's Portfolio, front end developer based in Hamburg and Paris."
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Monda"
       rel="stylesheet"
+      href="./resources/Sawton_Circular_Thin/Sawton_Circular_Thin_Webfont/Sawton Circular Webfont/stylesheet.css"
     />
-    <link rel="stylesheet" href="./resources/css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./resources/css/styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
@@ -24,55 +26,40 @@
           <span></span>
           <span></span>
         </div>
-        <nav id="mySidenav" class="sidenav">
+
+        <nav id="nav" class="top-nav nav-down">
           <ul class="nobullets">
             <li>
-              <a href="#about" class="-spacing -uppercase">About me</a>
+              <a href="#about">About me</a>
             </li>
             <li>
-              <a href="#portfolio" class="-spacing -uppercase">Portfolio</a>
+              <a href="#portfolio">Portfolio</a>
             </li>
             <li>
-              <a href="#skills" class="-spacing -uppercase">Skills</a>
+              <a href="#skills">Skills</a>
             </li>
             <li>
-              <a href="#contact" class="-spacing -uppercase">Contact</a>
+              <a href="#contact">Contact</a>
             </li>
           </ul>
         </nav>
 
-        <div class="content-wrapper">
+        <div class="hero">
           <h1>Marianne Fabre</h1>
-          <h2>Front-End Engineer</h2>
+          <h2 class="line-1 anim-typewriter">Front-End Engineer</h2>
         </div>
-        <p class="bottom-links -accent -small">
-          <a
-            class="-accent -uppercase -small"
-            href="https://www.linkedin.com/in/mariannefabre/"
-            target="_blank"
-            >LinkedIn
-          </a>
-          &nbsp;•&nbsp;
-          <a
-            class="-accent -uppercase -small"
-            href="https://github.com/mariannefabre"
-            target="_blank"
-          >
-            Github</a
-          >
-        </p>
       </header>
 
       <main>
         <section id="about">
           <div>
             <h2>About me</h2>
-            <div class="subcontainer presentation">
+            <div class="presentation">
               <div class="portrait">
                 <img src="./resources/Portrait-Marianne.jpg" alt="Marianne" />
               </div>
               <p>
-                "I was born and raised in Paris, influenced by both my french
+                ❝ I was born and raised in Paris, influenced by both my french
                 and south korean background. After obtaining my Bachelor's
                 degree in engineering, I spent part of my Master's in Montréal,
                 where I specialized in software engineering. Before graduating
@@ -86,7 +73,7 @@
                 develop IT products. I therefore left my job to pursue a
                 front-end engineering course. Today I continue to enjoy learning
                 about software development and working towards a career as a
-                Front-End Engineer."
+                Front-End Engineer. ❞
               </p>
               <p>
                 <a
@@ -102,85 +89,88 @@
 
         <section id="portfolio">
           <h2>Portfolio</h2>
-          <div class="subcontainer">
-            <div class="portfolio-item">
-              <h3>Urban Yoga Website</h3>
-              <video
-                src="./resources/demo-urban-yoga.mov"
-                playsinline
-                autoplay
-                muted
-                loop
-                width="100%"
-                height="auto"
+          <div class="portfolio-item">
+            <h3>Urban Yoga Website</h3>
+            <video
+              src="./resources/demo-urban-yoga.mov"
+              playsinline
+              autoplay
+              muted
+              loop
+              width="100%"
+              height="auto"
+            >
+              Sorry, your browser doesn't support embedded videos.
+            </video>
+            <p>
+              <a
+                class="-accent -uppercase -small"
+                href="https://github.com/mariannefabre/YogaClub.git"
+                target="_blank"
+                >View on Github →</a
               >
-                Sorry, your browser doesn't support embedded videos.
-              </video>
-              <p>
-                <a
-                  class="-accent -uppercase -small"
-                  href="https://github.com/mariannefabre/YogaClub.git"
-                  target="_blank"
-                  >View on Github →</a
-                >
-              </p>
+            </p>
+          </div>
+          <div class="portfolio-item">
+            <h3>Memory Card Game</h3>
+            <div class="iframe-container">
+              <iframe
+                id="memory-game"
+                src="https://mariannefabre.github.io/Memory-Card-Game"
+                title="Memory card game"
+                allow="fullscreen"
+              ></iframe>
             </div>
-            <div class="portfolio-item">
-              <h3>Memory Card Game</h3>
-              <div class="iframe-container">
-                <iframe
-                  id="memory-game"
-                  src="https://mariannefabre.github.io/Memory-Card-Game"
-                  title="Memory card game"
-                  allow="fullscreen"
-                ></iframe>
-              </div>
 
-              <p id="toggleFullscreen">
-                <a class="-accent -uppercase -small">Go full screen →</a>
-              </p>
-              <p class="redirectToPage">
-                <a
-                  class="-accent -uppercase -small"
-                  href="https://mariannefabre.github.io/Memory-Card-Game"
-                  >Go to site →</a
-                >
-              </p>
-              <p>
-                <a
-                  class="-accent -uppercase -small"
-                  href="https://github.com/mariannefabre/Memory-Card-Game"
-                  target="_blank"
-                  >View on Github →</a
-                >
-              </p>
-            </div>
+            <p id="toggleFullscreen">
+              <a class="-accent -uppercase -small">Go full screen →</a>
+            </p>
+            <p class="redirectToPage">
+              <a
+                class="-accent -uppercase -small"
+                href="https://mariannefabre.github.io/Memory-Card-Game"
+                >Go to site →</a
+              >
+            </p>
+            <p>
+              <a
+                class="-accent -uppercase -small"
+                href="https://github.com/mariannefabre/Memory-Card-Game"
+                target="_blank"
+                >View on Github →</a
+              >
+            </p>
           </div>
         </section>
 
         <section id="skills">
           <h2>Skills</h2>
-          <div class="subcontainer skills-container">
-            <h3>Programming</h3>
-            <span title="HTML5"
+
+          <h3>Programming</h3>
+          <div class="skills-container">
+            <span class="skill html-icon" title="HTML5"
               ><img src="./resources/html5.svg" alt="html5"
             /></span>
-            <span title="CSS3"
+            <span class="skill" title="CSS3"
               ><img src="./resources/css3.svg" alt="css3"
             /></span>
-            <span title="Javascript5"
+            <span class="skill" title="Javascript5"
               ><img src="./resources/javascript5.svg" alt="javascript5"
             /></span>
-            <span title="REACT"
-              ><img src="./resources/react.svg" alt="react"
+            <span class="skill" title="REACT"
+              ><p>React</p>
+              <img src="./resources/react.svg" alt="react"
             /></span>
-
-            <h3>UI Design</h3>
-            <span title="Figma"
-              ><img src="./resources/figma.svg" alt="figma"
+          </div>
+          <h3>UI Design</h3>
+          <div class="skills-container">
+            <span class="skill" title="Figma"
+              ><p>Figma</p>
+              <img src="./resources/figma.svg" alt="figma"
             /></span>
-            <span title="Proto.io"
-              ><img src="./resources/proto-io.svg" alt="proto.io"
+            <span class="skill" title="Proto.io"
+              ><p>Proto.io</p>
+              <img src="./resources/proto-io.svg" alt="proto.io"
             /></span>
           </div>
         </section>
@@ -188,41 +178,36 @@
         <section id="contact">
           <h2>Contact</h2>
 
-          <div class="subcontainer contact-container">
-            <ul class="nobullets">
-              <li>
-                <p class="-small -accent -spacing -uppercase">name</p>
-                <p>Marianne Fabre</p>
-              </li>
-              <li>
-                <p class="-small -accent -spacing -uppercase">role</p>
-                <p>Front-end engineer</p>
-              </li>
-            </ul>
-            <ul class="nobullets">
-              <li>
-                <p class="-small -accent -spacing -uppercase">email</p>
-                <p>
-                  <a target="_top" href="mailto:mariannefbr@gmail.com"
-                    >mariannefbr@gmail.com →
-                  </a>
-                </p>
-              </li>
-              <li>
-                <p class="-small -accent -spacing -uppercase">phone</p>
-                <p><a href="tel:+33651015185">(+33) 6 51 01 51 85 →</a></p>
-              </li>
-            </ul>
-          </div>
+          <div class="subcontainer">
+            <p>Marianne Fabre</p>
+            <p>
+              <a target="_top" href="mailto:mariannefbr@gmail.com"
+                >mariannefbr@gmail.com →
+              </a>
+            </p>
+            <p><a href="tel:+33651015185">(+33) 6 51 01 51 85 →</a></p>
 
-          <form class="form"></form>
+            <p>
+              <a
+                href="https://www.linkedin.com/in/mariannefabre/"
+                target="_blank"
+                >LinkedIn →
+              </a>
+            </p>
+            <p>
+              <a href="https://github.com/mariannefabre" target="_blank">
+                Github →</a
+              >
+            </p>
+          </div>
         </section>
       </main>
 
       <footer>
-        <p class="-small copyright">© 2020</p>
+        <p class="-small">© 2020</p>
       </footer>
     </div>
   </body>
+
   <script src="./js/myscript.js"></script>
 </html>

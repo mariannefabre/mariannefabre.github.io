@@ -1,4 +1,6 @@
-let sideNav = document.getElementById("mySidenav");
+// side menu
+
+let sideNav = document.getElementById("nav");
 
 const openSideNav = function () {
   function isNavOpen() {
@@ -21,6 +23,8 @@ document
   .getElementById("nav-icon")
   .addEventListener("click", openSideNav, true);
 
+// iframe
+
 function toggleFullscreen() {
   let frame = document.getElementById("memory-game");
   if (!document.fullscreenElement) {
@@ -34,3 +38,35 @@ function toggleFullscreen() {
 
 let toggleButton = document.getElementById("toggleFullscreen");
 toggleButton.addEventListener("click", toggleFullscreen, true);
+
+// menu bar
+
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $(".top-nav").outerHeight();
+
+$(window).scroll(function (event) {
+  didScroll = true;
+});
+
+setInterval(function () {
+  if (didScroll) {
+    hasScrolled();
+    didScroll = false;
+  }
+}, 250);
+
+function hasScrolled() {
+  var st = $(this).scrollTop();
+  if (Math.abs(lastScrollTop - st) <= delta) return;
+
+  if (st > lastScrollTop && st > navbarHeight) {
+    $(".top-nav").removeClass("nav-down").addClass("nav-up");
+  } else {
+    if (st + $(window).height() < $(document).height()) {
+      $(".top-nav").removeClass("nav-up").addClass("nav-down");
+    }
+  }
+  lastScrollTop = st;
+}

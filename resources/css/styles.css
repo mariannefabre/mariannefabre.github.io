@@ -1,0 +1,407 @@
+:root {
+  --color-primary: #090d12;
+  --color-primary-transparent: #090d12de;
+  --color-secondary: #c5945c;
+  --color-light: rgb(203, 210, 217);
+  --color-light-grey: rgb(154, 165, 177);
+}
+
+/* General styles */
+
+html {
+  font-size: 17px;
+}
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+body {
+  background-color: var(--color-primary);
+  color: var(--color-light-grey);
+  font-family: "sawton_circularthin", Sans-Serif;
+  padding-top: 60px;
+}
+main,
+footer {
+  width: 95%;
+  margin: 0 auto;
+  line-height: 1.7em;
+}
+section {
+  margin-bottom: 9rem;
+}
+
+@media only screen and (min-width: 480px) {
+  main,
+  footer {
+    width: 85%;
+  }
+}
+@media only screen and (min-width: 770px) {
+  main,
+  footer {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  main,
+  footer {
+    width: 60%;
+  }
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: "sawton_circularthin", Sans-Serif;
+  margin-bottom: 0.6rem;
+  color: var(--color-light);
+}
+
+h2 {
+  color: var(--color-light);
+  font-weight: bold;
+  font-family: "sawton_circularthin", Sans-Serif;
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+}
+
+@media only screen and (min-width: 800px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+h3 {
+  margin: 2.5rem 0;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.2s ease-out;
+  cursor: pointer;
+  display: inline-block;
+  color: inherit;
+}
+
+a:hover {
+  transform: translateX(0.6rem);
+}
+a:active,
+a:focus {
+  color: var(--color-light);
+}
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+/* UTILITIES */
+
+.nobullets {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.-small {
+  font-size: 0.8rem;
+}
+.-uppercase {
+  text-transform: uppercase;
+}
+.-spacing {
+  letter-spacing: 0.1em;
+}
+.-accent {
+  color: var(--color-secondary);
+}
+.-ident {
+  left: -2px;
+}
+
+/* Navigation Bar */
+
+#nav-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  position: fixed;
+  top: 20px;
+  left: 18px;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  z-index: 4;
+}
+
+#nav-icon span {
+  z-index: 4;
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: var(--color-light);
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+#nav-icon span:nth-child(1) {
+  top: 0px;
+}
+
+#nav-icon span:nth-child(2),
+#nav-icon span:nth-child(3) {
+  top: 9px;
+  width: 80%;
+}
+
+#nav-icon span:nth-child(4) {
+  top: 18px;
+}
+
+#nav-icon.open span:nth-child(1),
+#nav-icon.open span:nth-child(4) {
+  top: 9px;
+  width: 0%;
+  left: 50%;
+}
+
+#nav-icon.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#nav-icon.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--color-secondary);
+  overflow-x: hidden;
+  transition: 0.5s;
+  z-index: 3;
+  padding-top: 30vh;
+  text-align: center;
+}
+
+#nav a {
+  padding-bottom: 1.2em;
+  display: block;
+  font-size: 25px;
+  color: var(--color-light);
+}
+
+@media only screen and (min-width: 800px) {
+  #nav-icon {
+    display: none;
+  }
+  #nav {
+    background-color: var(--color-primary-transparent);
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100% !important ;
+    text-align: right;
+    padding-top: 0;
+  }
+  .nav-up {
+    top: -60px !important;
+  }
+  #nav ul {
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    margin-right: 10%;
+  }
+  #nav li + li {
+    margin-left: 2rem;
+  }
+  #nav a {
+    padding-bottom: 0;
+    font-size: inherit;
+    color: var(--color-light-grey);
+  }
+
+  #nav a:hover,
+  #nav a:focus {
+    color: var(--color-light);
+  }
+}
+
+/* Header */
+
+header {
+  height: 100vh;
+}
+
+.hero {
+  position: relative;
+  top: 30vh;
+  left: 5vw;
+  width: fit-content;
+}
+
+@media only screen and (min-width: 400px) {
+  .hero {
+    left: 10vw;
+  }
+}
+
+header h2 {
+  color: var(--color-secondary);
+  width: fit-content;
+  border-right: 2px solid var(--color-secondary);
+  font-size: 1.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-top: 0.2rem;
+}
+@media only screen and (min-width: 1000px) {
+  header h2 {
+    font-size: 2rem;
+  }
+}
+
+/* About Section */
+
+.presentation {
+  display: flex;
+  flex-wrap: wrap;
+}
+.presentation p {
+  text-align: justify;
+}
+
+.portrait {
+  padding: 1.5rem;
+  width: 300px;
+  height: auto;
+  margin: 0 auto;
+}
+.portrait img {
+  border-radius: 50%;
+  max-width: 100%;
+}
+
+/* Portfolio Section */
+
+.portfolio-item {
+  margin: 60px auto;
+  height: auto;
+  display: block;
+}
+
+.iframe-container {
+  height: 80vh;
+}
+iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+#toggleFullscreen {
+  display: none;
+}
+
+@media only screen and (min-width: 800px) {
+  .redirectToPage {
+    display: none;
+  }
+  #toggleFullscreen {
+    display: inherit;
+  }
+}
+
+/* Skills Section */
+
+.skills-container {
+  display: inline-flex;
+}
+
+.skill img {
+  width: 70px;
+  height: 70px;
+}
+.skill {
+  margin-right: 10px;
+}
+.html-icon {
+  margin-right: 3px;
+}
+.skill p {
+  font-size: 12px;
+  color: var(--color-light);
+  margin: 0;
+  text-transform: uppercase;
+  line-height: 0;
+  margin-top: -0.3rem;
+  margin-bottom: 0.8rem;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1000px) {
+  .skill img {
+    width: 80px;
+    height: 80px;
+  }
+  .skill {
+    margin-right: 20px;
+  }
+  .html-icon {
+    margin-right: 10px;
+  }
+  .skill p {
+    font-size: 14px;
+  }
+}
+
+footer {
+  margin-top: -5rem;
+}
+
+/* Animation */
+
+.anim-typewriter {
+  animation: typewriter 2s steps(22) 1s 1 normal both,
+    blinkTextCursor 800ms steps(22) infinite normal;
+}
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 8.5em;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: var(--color-secondary);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
