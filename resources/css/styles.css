@@ -11,7 +11,7 @@
 html {
   font-size: 18px;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 760px) {
   html {
     font-size: 19px;
   }
@@ -20,7 +20,7 @@ html {
 body {
   background-color: var(--color-primary);
   color: var(--color-light-grey);
-  font-family: "Inter", Sans-Serif;
+  font-family: Helvetica, Sans-Serif;
   padding-top: 60px;
 }
 main,
@@ -38,7 +38,7 @@ section {
     width: 85%;
   }
 }
-@media only screen and (min-width: 770px) {
+@media only screen and (min-width: 760px) {
   main,
   footer {
     width: 70%;
@@ -300,8 +300,13 @@ header h2 {
   flex-wrap: wrap;
 }
 .presentation p {
-  text-align: justify;
-  font-family: "Inter", Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
+}
+
+@media only screen and (min-width: 760px) {
+  .presentation p {
+    text-align: justify;
+  }
 }
 
 .portrait {
