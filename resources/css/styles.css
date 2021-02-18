@@ -53,7 +53,7 @@ section {
 
 h1 {
   font-size: 3rem;
-  font-family: Helvetica, Sans-Serif;
+  font-family: "Helvetica", Sans-Serif;
   margin-bottom: 0.6rem;
   color: var(--color-light);
 }
@@ -328,6 +328,11 @@ header h2 {
   display: block;
 }
 
+.portfolio-item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 .iframe-container {
   height: 80vh;
 }
@@ -335,18 +340,6 @@ iframe {
   width: 100%;
   height: 100%;
   border: 0;
-}
-#toggleFullscreen {
-  display: none;
-}
-
-@media only screen and (min-width: 800px) {
-  .redirectToPage {
-    display: none;
-  }
-  #toggleFullscreen {
-    display: inherit;
-  }
 }
 
 /* Skills Section */
@@ -399,8 +392,8 @@ footer {
 /* Animation */
 
 .anim-typewriter {
-  animation: typewriter 2s steps(22) 1s 1 normal both,
-    blinkTextCursor 800ms steps(22) infinite normal;
+  animation: typewriter 1s steps(20) 1s 1 normal both,
+    blinkTextCursor 800ms steps(20) infinite normal;
 }
 @keyframes typewriter {
   from {

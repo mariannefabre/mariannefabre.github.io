@@ -23,21 +23,6 @@ document
   .getElementById("nav-icon")
   .addEventListener("click", openSideNav, true);
 
-// iframe
-
-function toggleFullscreen() {
-  let frame = document.getElementById("memory-game");
-  if (!document.fullscreenElement) {
-    frame.requestFullscreen().catch((err) => {
-      console.log(err);
-    });
-  } else {
-    document.exitFullscreen();
-  }
-}
-
-let toggleButton = document.getElementById("toggleFullscreen");
-toggleButton.addEventListener("click", toggleFullscreen, true);
 
 // menu bar
 
