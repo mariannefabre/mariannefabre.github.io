@@ -82,7 +82,7 @@ h2 {
 }
 
 h3 {
-  margin: 2.5rem 0;
+  margin: 2rem 0;
   font-family: Helvetica, sans-serif;
 }
 
@@ -339,8 +339,6 @@ header h2 {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 100%;
-  width: 100%;
   opacity: 0;
   transition: 0.2s ease;
 }
