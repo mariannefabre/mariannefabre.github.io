@@ -274,7 +274,7 @@ header {
   }
 }
 header h2 {
-  color: var(--color-secondary);
+  color: var(--color-light-grey);
   width: fit-content;
   border-right: 2px solid var(--color-secondary);
   font-size: 1.4rem;
@@ -425,20 +425,20 @@ footer {
 /* Animation */
 
 .anim-typewriter {
-  animation: typewriter 1s steps(20) 1s 1 normal both,
-    blinkTextCursor 800ms steps(20) infinite normal;
+  animation: typewriter 1s steps(17) 1s 1 normal both,
+    blinkTextCursor 2000ms steps(17) infinite normal;
 }
 @keyframes typewriter {
   from {
     width: 0;
   }
   to {
-    width: 10em;
+    width: 9em;
   }
 }
 @keyframes blinkTextCursor {
   from {
-    border-right-color: var(--color-secondary);
+    border-right-color: var(--color-light-grey);
   }
   to {
     border-right-color: transparent;
