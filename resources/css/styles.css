@@ -95,7 +95,7 @@ a {
 }
 
 a:hover {
-  transform: translateX(0.6rem);
+  transform: scale(1.1);
 }
 a:active,
 a:focus {
@@ -255,28 +255,24 @@ a:focus {
 /* Header */
 
 header {
-  height: 100vh;
+  height: 88vh;
 }
-
 .hero {
   position: relative;
   top: 20vh;
   left: 5vw;
   width: fit-content;
 }
-
 @media only screen and (min-width: 460px) {
   .hero {
     left: 10vw;
   }
 }
-
 @media only screen and (min-width: 750px) {
   .hero {
     top: 30vh;
   }
 }
-
 header h2 {
   color: var(--color-secondary);
   width: fit-content;
@@ -292,23 +288,6 @@ header h2 {
     font-size: 2rem;
   }
 }
-
-/* About Section */
-
-.presentation {
-  display: flex;
-  flex-wrap: wrap;
-}
-.presentation p {
-  font-family: Helvetica, sans-serif;
-}
-
-@media only screen and (min-width: 760px) {
-  .presentation p {
-    text-align: justify;
-  }
-}
-
 .portrait {
   padding: 1.5rem;
   width: 300px;
@@ -320,6 +299,29 @@ header h2 {
   max-width: 100%;
 }
 
+/* About Section */
+
+.presentation {
+  display: block;
+  flex-wrap: wrap;
+}
+.presentation p {
+  font-family: Helvetica, sans-serif;
+}
+
+@media only screen and (min-width: 760px) {
+  .presentation p {
+    text-align: justify;
+  }
+}
+.media-icon {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
 /* Portfolio Section */
 
 .portfolio-item {
