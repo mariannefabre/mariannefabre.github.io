@@ -16,7 +16,6 @@ html {
     font-size: 19px;
   }
 }
-
 body {
   background-color: var(--color-primary);
   color: var(--color-light-grey);
@@ -33,26 +32,22 @@ section {
 }
 
 @media only screen and (min-width: 480px) {
+  header,
   main,
   footer {
-    width: 85%;
+    width: 95%;
+    margin: 0 auto;
   }
 }
 @media only screen and (min-width: 760px) {
+  header,
   main,
   footer {
-    width: 70%;
+    max-width: 700px;
   }
 }
-@media only screen and (min-width: 1300px) {
-  main,
-  footer {
-    width: 60%;
-  }
-}
-
 h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-family: "Helvetica", Sans-Serif;
   margin-bottom: 0.6rem;
   color: var(--color-light);
@@ -64,21 +59,6 @@ h2 {
   font-family: Helvetica, Sans-Serif;
   font-size: 1.8rem;
   margin-bottom: 3rem;
-}
-
-@media only screen and (min-width: 800px) {
-  h1 {
-    font-size: 3rem;
-  }
-}
-
-@media only screen and (min-width: 1000px) {
-  h1 {
-    font-size: 3.5rem;
-  }
-  h2 {
-    font-size: 2rem;
-  }
 }
 
 h3 {
@@ -255,22 +235,18 @@ a:focus {
 /* Header */
 
 header {
-  height: 88vh;
+  height: 50vh;
 }
 .hero {
-  position: relative;
-  top: 20vh;
-  left: 5vw;
-  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
 }
-@media only screen and (min-width: 460px) {
+@media only screen and (min-width: 550px) {
   .hero {
-    left: 10vw;
-  }
-}
-@media only screen and (min-width: 750px) {
-  .hero {
-    top: 30vh;
+    flex-direction: row;
   }
 }
 header h2 {
@@ -280,25 +256,28 @@ header h2 {
   font-size: 1.4rem;
   white-space: nowrap;
   overflow: hidden;
-  margin-top: 0.9rem;
+  margin: 0.5rem 0;
   font-family: Helvetica, sans-serif;
-}
-@media only screen and (min-width: 1000px) {
-  header h2 {
-    font-size: 2rem;
-  }
 }
 .portrait {
   padding: 1.5rem;
-  width: 300px;
+  width: 180px;
   height: auto;
   margin: 0 auto;
+}
+@media only screen and (min-width: 550px) {
+  .portrait {
+    margin: 0;
+  }
 }
 .portrait img {
   border-radius: 50%;
   max-width: 100%;
 }
-
+.titles {
+  display: flex;
+  flex-direction: column;
+}
 /* About Section */
 
 .presentation {
@@ -366,7 +345,7 @@ header h2 {
 }
 
 .iframe-container {
-  height: 80vh;
+  height: 70vh;
 }
 iframe {
   width: 100%;
@@ -378,7 +357,8 @@ iframe {
 /* Skills Section */
 
 .skills-container {
-  display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .skill img {
